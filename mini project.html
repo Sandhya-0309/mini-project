@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Management Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+.header{
+    background:#0077b6;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    text-align:center;
+}
+
+.card h2{
+    color:#0077b6;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.table-section{
+    padding:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+th{
+    background:#0077b6;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:10px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f1f1f1;
+}
+
+.footer{
+    text-align:center;
+    padding:15px;
+    background:#0077b6;
+    color:white;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Hospital Management Dashboard</h1>
+</div>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Total Patients</h2>
+        <p>250</p>
+    </div>
+
+    <div class="card">
+        <h2>Total Doctors</h2>
+        <p>35</p>
+    </div>
+
+    <div class="card">
+        <h2>Appointments Today</h2>
+        <p>48</p>
+    </div>
+
+    <div class="card">
+        <h2>Available Beds</h2>
+        <p>62</p>
+    </div>
+
+</div>
+
+<div class="table-section">
+
+<h2 style="margin-bottom:15px;">Patient Records</h2>
+
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Patient Name</th>
+<th>Age</th>
+<th>Disease</th>
+<th>Doctor</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>101</td>
+<td>Rahul</td>
+<td>32</td>
+<td>Fever</td>
+<td>Dr. Kumar</td>
+<td>Admitted</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Priya</td>
+<td>25</td>
+<td>Diabetes</td>
+<td>Dr. Sharma</td>
+<td>Under Treatment</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Arjun</td>
+<td>40</td>
+<td>Heart Disease</td>
+<td>Dr. Reddy</td>
+<td>Critical Care</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td>Sneha</td>
+<td>29</td>
+<td>Asthma</td>
+<td>Dr. Rao</td>
+<td>Recovered</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td>Vikram</td>
+<td>36</td>
+<td>COVID-19</td>
+<td>Dr. Patel</td>
+<td>Discharged</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+<div class="footer">
+    Hospital Management System © 2026
+</div>
+
+</body>
+</html>
